@@ -1,0 +1,17 @@
+name: 'Sync Labels'
+author: 'Erez Rokah (erezrokah) <erez@netlify.com>'
+description: 'A GitHub action to sync labels across repositories'
+inputs:
+  github-token:
+    required: true
+    description: 'GitHub token with access to all repositories'
+  rules-path:
+    default: .github/labeler.yml
+    description: 'Title used in the comments'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/main.js'
+branding:
+  icon: 'upload'
+  color: 'green'
