@@ -1,7 +1,7 @@
 const repositories = `
   query repos($cursor: String) {
     viewer {
-      repositories(first:100, after: $cursor) {
+      repositories(first:100, after: $cursor, affiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER], ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]) {
         nodes{
           nameWithOwner
         }
