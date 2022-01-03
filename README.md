@@ -5,10 +5,13 @@
 ## Motivation
 
 GitHub issues are great for tracking executables in a single repository. However when a single project touches multiple
-repositories, it's hard to track issues across repositories. At Netlify we use issue labels to link cross repo issues to
-a single project, for example we'll assign the `proj/new-amazing-secret-feature` label to multiple issues in multiple
-repositories. To avoid the need to manually add, delete or rename labels in each repository, we created this GitHub
-action to automatically sync the labels.
+repositories, it's hard to track issues across repositories.
+
+At Netlify we use issue labels to link cross repo issues to a single project, for example we'll assign the
+`proj/new-amazing-secret-feature` label to multiple issues in multiple repositories.
+
+To avoid the need to manually add, delete or rename labels in each repository, we created this GitHub action to
+automatically sync the labels.
 
 ## Usage
 
