@@ -33,13 +33,9 @@ const applyRules = async (octokit: Octokit, rules: GroupedRules, repos: string[]
     const matchedRepos = repos.filter((repo) => repoPatterns.some((pattern) => new RegExp(pattern).test(repo)))
     for (const repo of matchedRepos) {
       core.info(`Applying rules to ${repo}`)
-      // eslint-disable-next-line no-await-in-loop
       const existingLabels = await getExistingLabels(octokit, repo)
-      // eslint-disable-next-line no-await-in-loop
       await createLabels(octokit, actions[LabelAction.CREATE], repo, existingLabels)
-      // eslint-disable-next-line no-await-in-loop
       await renameLabels(octokit, actions[LabelAction.RENAME], repo, existingLabels)
-      // eslint-disable-next-line no-await-in-loop
       await deleteLabels(octokit, actions[LabelAction.DELETE], repo, existingLabels)
     }
   }
