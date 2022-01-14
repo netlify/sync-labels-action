@@ -12,7 +12,6 @@ export const getRepos = async (octokit: Octokit) => {
   let result
   let cursor
   do {
-    // eslint-disable-next-line no-await-in-loop
     result = await octokit.graphql<{
       viewer: User
     }>(queries.repositories, { cursor })
@@ -38,7 +37,6 @@ export const getExistingLabels = async (octokit: Octokit, repo: string) => {
 
   const { owner, name } = getRepoOwnerAndName(repo)
   do {
-    // eslint-disable-next-line no-await-in-loop
     result = await octokit.graphql<{
       repository: Repository
     }>(queries.labels, { cursor, owner, name })
@@ -68,7 +66,6 @@ export const createLabels = async (
 
   for (const label of toCreate) {
     core.info(`Creating label '${label.name}' in repo ${repo}`)
-    // eslint-disable-next-line no-await-in-loop
     await octokit.rest.issues.createLabel({
       owner,
       repo: repoName,
@@ -80,7 +77,6 @@ export const createLabels = async (
 
   for (const label of toUpdate) {
     core.info(`Updating label '${label.name}' in repo ${repo}`)
-    // eslint-disable-next-line no-await-in-loop
     await octokit.rest.issues.updateLabel({
       owner,
       repo: repoName,
@@ -104,7 +100,6 @@ export const deleteLabels = async (
 
   for (const label of toDelete) {
     core.info(`Deleting label '${label.name}' in repo ${repo}`)
-    // eslint-disable-next-line no-await-in-loop
     await octokit.rest.issues.deleteLabel({
       owner,
       repo: repoName,
@@ -130,7 +125,6 @@ export const renameLabels = async (
 
   for (const label of toRename) {
     core.info(`Renaming label from '${label.rename_from}' to '${label.name}' in repo ${repo}`)
-    // eslint-disable-next-line no-await-in-loop
     await octokit.rest.issues.updateLabel({
       owner,
       repo: repoName,
