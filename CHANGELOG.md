@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.3](https://github.com/netlify/sync-labels-action/compare/v1.0.2...v1.0.3) (2022-03-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ajv to v8.10.0 ([#46](https://github.com/netlify/sync-labels-action/issues/46)) ([ef3ed45](https://github.com/netlify/sync-labels-action/commit/ef3ed4534b4bb9efe3947c4a6e70cbf4f4fc7107))
+
 ### [1.0.2](https://www.github.com/netlify/sync-labels-action/compare/v1.0.1...v1.0.2) (2022-01-17)
 
 
