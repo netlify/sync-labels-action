@@ -1,7 +1,7 @@
 {
   "name": "@netlify/sync-labels-action",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A GitHub action to sync labels across repositories",
   "files": [
     "dist/**/*.js",
