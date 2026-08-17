@@ -1,5 +1,16 @@
 # Changelog
 
+### [1.0.4](https://github.com/netlify/sync-labels-action/compare/v1.0.3...v1.0.4) (2022-05-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @actions/core to v1.7.0 ([#80](https://github.com/netlify/sync-labels-action/issues/80)) ([ecaefbd](https://github.com/netlify/sync-labels-action/commit/ecaefbd04c37316d7a52d14b85439780f3a4660a))
+* **deps:** update dependency @actions/core to v1.8.0 ([#81](https://github.com/netlify/sync-labels-action/issues/81)) ([840ffe2](https://github.com/netlify/sync-labels-action/commit/840ffe25b5b8eeb660882b56829d68f8c30ae3d6))
+* **deps:** update dependency @actions/github to v5.0.1 ([#72](https://github.com/netlify/sync-labels-action/issues/72)) ([d5fc622](https://github.com/netlify/sync-labels-action/commit/d5fc6221c0ef22121100d3b2bbb39ebdb9799d91))
+* **deps:** update dependency ajv to v8.11.0 ([#67](https://github.com/netlify/sync-labels-action/issues/67)) ([123a0e6](https://github.com/netlify/sync-labels-action/commit/123a0e63ac80247c666ed2a1cd9dbd248db1fd13))
+* **deps:** update dependency better-ajv-errors to v1.2.0 ([#76](https://github.com/netlify/sync-labels-action/issues/76)) ([f45ac5c](https://github.com/netlify/sync-labels-action/commit/f45ac5c97cf7c05eeea0742eff7f6fd1fba1af4a))
+
 ### [1.0.3](https://github.com/netlify/sync-labels-action/compare/v1.0.2...v1.0.3) (2022-03-10)
 
 
